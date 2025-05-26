@@ -45,20 +45,27 @@ The script runs this `DAGMetric` on the generated test case and prints the resul
 
 ## Setup Instructions
 
-1.  **Clone the repository (if applicable) or ensure all files are in the same directory.**
+1.  **Clone the repository (if applicable) or ensure all files are in the `jules` directory.**
 
-2.  **Create and activate a Python virtual environment (recommended):**
+2.  **Navigate into the project directory:**
+    ```bash
+    cd jules
+    ```
+
+3.  **Create and activate a Python virtual environment (recommended):**
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
-3.  **Install dependencies:**
+4.  **Install dependencies:**
+    (Ensure you are inside the `jules` directory where `requirements.txt` is located)
     ```bash
     pip install -r requirements.txt
     ```
 
-4.  **Set your OpenAI API Key:**
+5.  **Set your OpenAI API Key:**
+    (This can be done from any directory, but needs to be set in your terminal session)
     You need an OpenAI API key for both the agents and the DeepEval LLM-as-a-judge to function. Set it as an environment variable:
     ```bash
     export OPENAI_API_KEY='your_openai_api_key_here'
@@ -71,7 +78,7 @@ The script runs this `DAGMetric` on the generated test case and prints the resul
 
 ## How to Run
 
-Ensure your `OPENAI_API_KEY` is set and you have installed the requirements.
+Ensure your `OPENAI_API_KEY` is set, you have installed the requirements, and you are currently in the `jules` directory.
 
 ### Running the Multi-Agent System (`app.py`)
 
